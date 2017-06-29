@@ -2,6 +2,7 @@
 	System Monitor v1.0 Script for Python 2 using psutil
 	Copyright(C) 2017 by Felix Knobl.
 	https://twitter.com/felix_knobl
+	https://github.com/Tomato997/SysMon
 
 """
 
