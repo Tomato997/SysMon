@@ -1,5 +1,5 @@
 """
-	System Monitor v1.0 Script for Python 2
+	System Monitor v1.0 Script for Python 2 using psutil
 	Copyright(C) 2017 by Felix Knobl.
 	https://twitter.com/felix_knobl
 
@@ -22,8 +22,11 @@ consumer_secret = "GEJDAHqZAmdkGiAckDE9GNKW4sSCTiQ0epwj4gnhZ58Foo55pI"
 access_key = "877194539743707136-GkArzen7tPib8JIgqszNk4o0ujkzpX6"
 access_secret = "iSfE6oiikROTsnjxv2E958Z4ZOQW0fR3H2dFB0uZaaZhu"
 
-LONG_POST_INTERVAL = 5 #10
-SHORT_POST_TIMEOUT = 5 #60
+ # How many times the current values should be posted before an average post is posted
+LONG_POST_INTERVAL = 10
+
+# Timeout betweet current values posts
+SHORT_POST_TIMEOUT = 60
 
 longPostCounter = LONG_POST_INTERVAL
 
@@ -119,7 +122,7 @@ while (True):
 		averageUsersCount = 0
 		averageTemperature = 0
 
-	# Sleep	
+	# Sleep	until next current values post
 	time.sleep(SHORT_POST_TIMEOUT)
 
 
