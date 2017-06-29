@@ -40,3 +40,9 @@ LONG_POST_INTERVAL = 10
 Timeout betweet current values posts
 
 SHORT_POST_TIMEOUT = 60
+
+----------------------------------------------------------------------------------------
+
+To execute the script use the command:
+
+python SysMon.py
