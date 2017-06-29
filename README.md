@@ -1,7 +1,6 @@
 # SysMon
-Python System Monitor using psutil
 
-System Monitor v1.0 Script for Python 2
+System Monitor v1.0 Script for Python 2 using psutil
 Copyright(C) 2017 by Felix Knobl.
 
 https://twitter.com/felix_knobl
@@ -16,7 +15,7 @@ https://pypi.python.org/packages/ea/1e/ffb8dafa9539c68bd0994d98c1cf55760b2efe0e2
 
 Used psutil version 5.2.2
 
-Need to be installed manually
+Need to be installed manually.
 
 If installation has failed, try the following commands (under fedora):
 
@@ -29,10 +28,13 @@ sudo pip install psutil
 ----------------------------------------------------------------------------------------
 
 User defined configuration:
+
 Use your own API keys ;)
 
 How many times the current values should be posted before an average post is posted
+
 LONG_POST_INTERVAL = 10
 
 Timeout betweet current values posts
+
 SHORT_POST_TIMEOUT = 60
